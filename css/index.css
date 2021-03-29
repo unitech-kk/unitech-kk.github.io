@@ -1,0 +1,164 @@
+:root {
+    --main-color: #DDD;
+    --sub-color: #444;
+    --shadow-color: #CCC;
+    --highlight-color: #EEE;
+}
+
+@font-face {
+	font-family: 'kosugi';
+	src: url('../Kosugi-Regular.ttf');
+}
+
+body {
+    font-family: 'kosugi';
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--sub-color);
+}
+
+#wrap {
+    overflow: hidden;
+}
+
+a:link, a:visited {
+    color: var(--sub-color);
+}
+
+.font-giant {
+    font-size: 64px;
+}
+
+.font-big {
+    font-size: 24px;
+}
+
+.font-normal {
+    font-size: 20px;
+}
+
+#eyecatch {
+    background-color: var(--shadow-color);
+}
+
+#small-eyecatch {
+    display: none;
+}
+
+#menu {
+    height: 96px;
+    padding: 16px;
+}
+
+.checkpoint {
+    height: 500px;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    line-height: 250%;
+}
+
+.checkpoint-word {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: var(--highlight-color);
+    padding: 32px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+}
+
+.checkpoint-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.checkpoint-img.left {
+    left: 0;
+}
+
+.checkpoint-img.right {
+    right: 0;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.effect-fade {
+    opacity: 0;
+    transition: 1s;
+}
+
+.effect-fade.top {
+    transform: translateY(-200px);
+}
+
+.effect-fade.left {
+    transform: translateX(-200px);
+}
+
+.effect-fade.right {
+    transform: translateX(200px);
+}
+
+.effect-fade.bottom {
+    transform: translateY(200px);
+}
+
+.effect-fade.effect-scroll09 {
+    opacity: 0.9;
+    transform: translate(0, 0);
+}
+
+@media screen and (max-width: 1000px) {
+    .font-giant {
+        font-size: 48px;
+    }
+
+    .font-big {
+        font-size: 20px;
+    }
+
+    .font-normal {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #big-eyecatch {
+        display: none;
+    }
+
+    #small-eyecatch {
+        text-align: center;
+        display: inline;
+    }
+
+    .font-giant {
+        font-size: 32px;
+    }
+
+    .font-big {
+        font-size: 20px;
+    }
+
+    .font-normal {
+        font-size: 16px;
+    }
+
+    #menu {
+        height: 64px;
+        padding: 8px;
+    }
+}
