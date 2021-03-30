@@ -51,7 +51,7 @@ a:link, a:visited {
     padding: 16px;
     position: fixed;
     z-index: 100;
-    background-color: var(--main-color);
+    background-color: #BBB;
     width: 100%;
 }
 
