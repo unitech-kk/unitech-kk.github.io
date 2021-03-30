@@ -142,6 +142,10 @@ a:link, a:visited {
     transform: translate(0, 0);
 }
 
+.forsmall {
+    display: none;
+}
+
 @media screen and (max-width: 1000px) {
     .font-giant {
         font-size: 48px;
@@ -157,6 +161,14 @@ a:link, a:visited {
 }
 
 @media screen and (max-width: 800px) {
+    .forbig {
+        display: none;
+    }
+
+    .forsmall {
+        display: inline;
+    }
+
     #eyecatch {
         margin-top: 64px;
     }
