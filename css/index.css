@@ -38,6 +38,7 @@ a:link, a:visited {
 }
 
 #eyecatch {
+    margin-top: 96px;
     background-color: var(--shadow-color);
 }
 
@@ -48,6 +49,10 @@ a:link, a:visited {
 #menu {
     height: 96px;
     padding: 16px;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--main-color);
+    width: 100%;
 }
 
 #menu-button {
@@ -150,6 +155,10 @@ a:link, a:visited {
 }
 
 @media screen and (max-width: 800px) {
+    #eyecatch {
+        margin-top: 64px;
+    }
+
     #big-eyecatch {
         display: none;
     }
