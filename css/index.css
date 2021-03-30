@@ -50,6 +50,20 @@ a:link, a:visited {
     padding: 16px;
 }
 
+#menu-button {
+    height: 100%;
+    background: transparent;
+    border: hidden;
+}
+
+#epilogue {
+    height: 256px;
+    margin-top: 64px;
+    padding-top: 12px;
+    background-color: var(--shadow-color);
+    text-align: center;
+}
+
 .checkpoint {
     height: 500px;
     margin-top: 64px;
