@@ -1,0 +1,28 @@
+.news-list {
+    padding-top: var(--normal);
+    padding-left: var(--normal);
+    font-size: var(--normal);
+}
+
+.news-list dt {
+    float: left;
+    margin-right: var(--normal);
+}
+
+.news-list dd {
+    margin-left: calc(var(--normal) * 9);
+}
+
+.news-list a {
+    color: var(--main-text-color);
+}
+
+/* tablet */
+@media screen and (min-width: 600px) {
+
+}
+
+/* PC */
+@media screen and (min-width: 1000px) {
+    
+}

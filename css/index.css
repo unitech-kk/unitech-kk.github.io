@@ -1,0 +1,234 @@
+:root {
+    --main-bg-color: rgb(230, 230, 230);
+    --main-text-color: rgb(70, 70, 70);
+    --dark-text-color: rgb(50, 50, 50);
+    --header-height: 96px;
+    --header-padding: 16px;
+    --logo-size: 36px;
+    --logo-margin: 8px;
+    --name-size: 32px;
+    --punchline-size: 48px;
+    --main-padding: 32px;
+    --footer-height: 192px;
+    --title-size: 24px;
+    --subline-size: 20px;
+    --normal: 16px;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    color: var(--main-text-color);
+}
+
+b {
+    color: var(--dark-text-color);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--header-padding);
+    padding-right: var(--header-padding);
+    height: var(--header-height);
+    width: 100%;
+    background-color: var(--main-bg-color);
+}
+
+#main {
+    margin-top: var(--header-height);
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    padding-bottom: var(--main-padding);
+}
+
+#logo {
+    height: var(--logo-size);
+    margin-right: var(--logo-margin);
+}
+
+#name {
+    display: flex;
+    font-size: var(--name-size);
+    font-weight: 900;
+    align-items: center;
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-btn {
+    display: flex;
+    height: 64px;
+    width: 64px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: transparent;
+    margin: 0;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 32px;
+    border-radius: 4px;
+    position: absolute;
+    background-color: var(--main-text-color);
+    transition: all 0.2s;
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+}
+
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: transparent;
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    background-color: var(--main-bg-color);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: var(--main-bg-color);
+}
+
+#menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 80;
+    background-color: var(--dark-text-color);
+    transition: all 0.4s;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#menu-btn-check:checked ~ #menu-content {
+    opacity: 0.9;
+    visibility: visible;
+}
+
+#menu-content ul {
+    position: absolute;
+}
+
+#menu-content li {
+    list-style-type: none;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#menu-content ul li a {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+#main-image {
+    height: 960px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: var(--footer-height);
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+}
+
+#footer p {
+    height: var(--normal);
+    font-weight: 500;
+}
+
+#place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--normal);
+    font-weight: 500;
+}
+
+.punchline {
+    font-size: var(--punchline-size);
+    font-weight: 700;
+}
+
+.title {
+    font-size: var(--title-size);
+    font-weight: 700;
+}
+
+.phrase {
+    font-size: var(--title-size);
+    font-weight: 700;
+}
+
+.subline {
+    padding: 0;
+    margin-left: var(--subline-size);
+    margin-right: var(--subline-size);
+    font-size: var(--subline-size);
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.subline li:before {
+    position: relative;
+    top: calc(var(--subline-size) / -6);
+    left: 0;
+    margin-right: calc(var(--subline-size) / 2);
+    display: inline-block;
+    width: calc(var(--subline-size) / 4);
+    height: calc(var(--subline-size) / 4);
+    content: '';
+    border-radius: 100%;
+    background: var(--main-text-color);
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/* tablet */
+@media screen and (min-width: 600px) {
+    :root {
+        --punchline-size: 64px;
+        --main-padding: 48px;
+    }
+}
+
+/* PC */
+@media screen and (min-width: 1000px) {
+    
+}
