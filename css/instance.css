@@ -20,7 +20,6 @@
 
     scroll-snap-align: start;
     flex-shrink: 0;
-    height: var(--instance-height);
     margin-right: var(--main-padding);
 }
 
