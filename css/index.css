@@ -20,6 +20,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     color: var(--main-text-color);
+    overflow-x: hidden;
 }
 
 b {
@@ -60,6 +61,19 @@ b {
 
 #menu-btn-check {
     display: none;
+}
+
+#main-image {
+    position: relative;
+    width: 1000px;
+    left: -250px;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    z-index: -1;
+}
+
+#tekkotsu {
+    transform: rotate(30deg);
 }
 
 .menu-btn {
@@ -126,7 +140,7 @@ b {
 }
 
 #menu-btn-check:checked ~ #menu-content {
-    opacity: 0.9;
+    opacity: 1;
     visibility: visible;
 }
 
@@ -145,10 +159,6 @@ b {
     font-weight: 700;
     color: var(--main-bg-color);
     text-decoration: none;
-}
-
-#main-image {
-    height: 960px;
 }
 
 #footer {
@@ -226,9 +236,22 @@ b {
         --punchline-size: 64px;
         --main-padding: 48px;
     }
+
+    #main-image {
+        width: 1300px;
+        left: -400px;
+        margin-top: 256px;
+    }
 }
 
 /* PC */
 @media screen and (min-width: 1000px) {
-    
+    :root {
+        --main-padding: 96px;
+    }
+
+    #main-image {
+        margin-top: -300px;
+        left: 400px;
+    }
 }
