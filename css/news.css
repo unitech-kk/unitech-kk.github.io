@@ -11,6 +11,7 @@
 
 .news-list dd {
     margin-left: calc(var(--normal) * 9);
+    font-family: serif;
 }
 
 .news-list a {

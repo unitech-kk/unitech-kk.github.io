@@ -207,6 +207,7 @@ b {
     font-size: var(--subline-size);
     font-weight: 500;
     list-style-type: none;
+    font-family: serif;
 }
 
 .subline li:before {

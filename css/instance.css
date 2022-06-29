@@ -16,10 +16,10 @@
 
 .instance {
     width: 100%;
-    margin-top: var(--main-padding);
 
     scroll-snap-align: start;
     flex-shrink: 0;
+    margin-top: var(--main-padding);
     margin-right: var(--main-padding);
 }
 
@@ -30,5 +30,9 @@
 
 /* PC */
 @media screen and (min-width: 1000px) {
-    
+    .instance {
+        margin-top: calc(var(--main-padding) / 2);
+        margin-right: calc(var(--main-padding) / 2);
+        width: 30%;
+    }
 }
