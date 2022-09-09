@@ -1,0 +1,14 @@
+.appeal {
+    text-align: center;
+    font-size: var(--subline-size);
+    font-weight: normal;
+    margin-top: 16px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
