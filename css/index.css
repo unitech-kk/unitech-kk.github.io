@@ -82,7 +82,7 @@ b {
     width: 64px;
     justify-content: center;
     align-items: center;
-    z-index: 90;
+    z-index: 110;
     background-color: transparent;
     margin: 0;
 }
@@ -131,7 +131,7 @@ b {
     top: 0;
     left: 0;
     opacity: 0;
-    z-index: 80;
+    z-index: 100;
     background-color: var(--dark-text-color);
     transition: all 0.4s;
     visibility: hidden;
