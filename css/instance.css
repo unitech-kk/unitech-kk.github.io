@@ -1,14 +1,9 @@
-:root {
-    --instance-height: 320px;
-}
-
 .slides {
-    width: calc(100% + 2 * var(--main-padding));
     margin: 0 calc(50% - 50vw);
 
     display: flex;
   
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -25,14 +20,13 @@
 
 /* tablet */
 @media screen and (min-width: 600px) {
-
-}
-
-/* PC */
-@media screen and (min-width: 1000px) {
     .instance {
         margin-top: calc(var(--main-padding) / 2);
         margin-right: calc(var(--main-padding) / 2);
         width: 30%;
     }
+}
+
+/* PC */
+@media screen and (min-width: 1000px) {
 }
