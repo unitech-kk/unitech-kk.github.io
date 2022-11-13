@@ -37,14 +37,13 @@ b {
     padding-right: var(--header-padding);
     height: var(--header-height);
     width: 100%;
-    background-color: var(--main-bg-color);
+    background-color: rgb(220, 220, 220);
+    z-index: 20;
 }
 
 #main {
     margin-top: var(--header-height);
-    padding-left: var(--main-padding);
-    padding-right: var(--main-padding);
-    padding-bottom: var(--main-padding);
+    margin-bottom: var(--main-padding);
 }
 
 #logo {
@@ -63,13 +62,31 @@ b {
     display: none;
 }
 
+#eyecatch-bg {
+    width: 100%;
+    margin-bottom: 96px;
+}
+
+#card {
+    position: absolute;
+    top: var(--header-height);
+    left: 0px;
+    width: 100%;
+    height: 320px;
+    background-color: var(--main-bg-color);
+    padding: 32px;
+}
+
+#motto {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
 #main-image {
     position: relative;
-    width: 1000px;
-    left: -250px;
-    margin-top: 128px;
-    margin-bottom: 128px;
-    z-index: -1;
+    width: 480px;
+    z-index: 1;
+    left: 96px;
 }
 
 #tekkotsu {
@@ -188,6 +205,9 @@ b {
 .punchline {
     font-size: var(--punchline-size);
     font-weight: 700;
+    z-index: 10;
+    position: relative;
+    top: -420px;
 }
 
 .title {
@@ -195,9 +215,15 @@ b {
     font-weight: 700;
 }
 
+.phrase1 {
+    position: relative;
+    top: -420px;
+}
+
 .phrase {
     font-size: var(--title-size);
     font-weight: 700;
+    z-index: 10;
 }
 
 .subline {
@@ -239,9 +265,9 @@ b {
     }
 
     #main-image {
-        width: 1300px;
-        left: -400px;
-        margin-top: 256px;
+        width: 640px;
+        left: 0px;
+        top: 0px;
     }
 }
 
@@ -251,9 +277,29 @@ b {
         --main-padding: 96px;
     }
 
+    #card {
+        top: 224px;
+        left: 128px;
+        width: 40%;
+        height: 50%;
+        padding: 64px;
+        overflow: hidden;
+    }
+
     #main-image {
-        margin-top: -300px;
-        left: 400px;
+        left: 96px;
+        top: 0px;
+    }
+
+    .punchline {
+        font-size: var(--punchline-size);
+        font-weight: 700;
+        z-index: 10;
+        top: -625px;
+    }
+
+    .phrase1 {
+        top: -625px;
     }
 
     #motto {
