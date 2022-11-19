@@ -1,3 +1,7 @@
+#main {
+    padding: var(--main-padding);
+}
+
 .news-list {
     padding-top: var(--normal);
     padding-left: var(--normal);

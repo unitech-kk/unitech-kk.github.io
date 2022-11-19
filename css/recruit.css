@@ -1,3 +1,7 @@
+#main {
+    padding: var(--main-padding);
+}
+
 .appeal {
     text-align: center;
     font-size: var(--subline-size);

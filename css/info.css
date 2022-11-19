@@ -1,3 +1,7 @@
+#main {
+    padding: var(--main-padding);
+}
+
 .info-title {
     margin-top: var(--title-size);
     text-align: center;
@@ -13,6 +17,12 @@
     font-size: var(--normal);
 }
 
+.info-list2 {
+    padding-top: var(--normal);
+    padding-left: var(--normal);
+    font-size: var(--normal);
+}
+
 .info-list dt {
     float: left;
     margin-right: var(--normal);
@@ -20,6 +30,16 @@
 
 .info-list dd {
     margin-left: calc(var(--normal) * 6);
+    font-family: serif;
+}
+
+.info-list2 dt {
+    float: left;
+    margin-right: var(--normal);
+}
+
+.info-list2 dd {
+    margin-left: calc(var(--normal) * 24);
     font-family: serif;
 }
 
@@ -51,5 +71,4 @@
 
 /* PC */
 @media screen and (min-width: 1000px) {
-    
 }
