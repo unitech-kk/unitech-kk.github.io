@@ -64,11 +64,37 @@
     font-size: var(--normal);
 }
 
+#map {
+    width: 95%;
+}
+
+#access {
+    padding: 32px;
+}
+
+#access-detail {
+    margin-top: 32px;
+}
+
 /* tablet */
 @media screen and (min-width: 600px) {
-
+    #map {
+        width: 400px;
+    }
 }
 
 /* PC */
 @media screen and (min-width: 1000px) {
+    #map {
+        width: 600px;
+    }
+
+    #access {
+        padding: 32px;
+        display: flex;
+    }
+    
+    #access-detail {
+        margin-left: 32px;
+    }
 }

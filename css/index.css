@@ -43,7 +43,6 @@ b {
 
 #main {
     margin-top: var(--header-height);
-    margin-bottom: var(--main-padding);
 }
 
 #logo {
@@ -58,13 +57,17 @@ b {
     align-items: center;
 }
 
+#name a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
 #menu-btn-check {
     display: none;
 }
 
 #eyecatch-bg {
     width: 100%;
-    margin-bottom: 96px;
 }
 
 #card {
@@ -306,7 +309,7 @@ b {
         padding-top: 32px;
         display: flex;
         justify-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     .right {
