@@ -17,6 +17,10 @@
     font-size: var(--normal);
 }
 
+a {
+    color: var(--main-text-color);
+}
+
 .info-list2 {
     padding-top: var(--normal);
     padding-left: var(--normal);
